@@ -50,14 +50,19 @@
 ### Thu
 1. Study about JS Games
 2. JS
-3. player objects
+3. player objects // don't know what those are
+4. (Deleted libraries that recognizes keyword for java)
+5. (Took 3 hours to get them back)
 
 ### Fri
-1. more js
+1. More JS
+2. Created new game based on WAR or BATTLE
 2. boardgame function
 
 ### Sat
-1. HMTL/ CSS
+1. More JS - 1hr
+2. Focus on alerts in js - 30 min
+2. HMTL/ CSS
 
 ### Sun
 HTML/CS + JS
