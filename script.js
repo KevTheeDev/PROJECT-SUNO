@@ -22,7 +22,7 @@
 // import { Object, Math } from "es6-shim";
 let round = 0
 
-let randomNum = parseInt(Math.random() * 11)
+let randomNum = Math.floor(Math.random() * 11);
 console.log(randomNum);
 
 
