@@ -8,13 +8,27 @@
 
 // write a function called "battle" that calls each of these functions to similate a game. at the end of the function, increment the round.
 
+
+// create a block / grid and display 
+
+// **************** ON CLICKS *********************
+    // After PLAY is clicked display the turn out of below
+    // display the card of PLAYER1 and PLAYER2
+        // display 'increment round' after whoever has won
+        // display 'win' round after whoever has won - do this first maybe
+        // PROMPT user to play again (-animate when you have time)
+    // 
+
+
+// **************** DISPLAYS *********************
+    //Change 5 card display to one card display in the block
 // -->
 
 
 
 
 
-
+// **************** GOOD TIPS *************************** 
 // creates an array of the KEYS out of the object
 // let key = Object.keys(player2);
 // console.log(key);

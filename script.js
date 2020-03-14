@@ -25,6 +25,7 @@ function checkCards (){
     while (!gameIsWon) {
         if (player1Cards.cards > player2Cards.cards){
             console.log(` Player 1: ${player1Cards.cards} `)
+            console.log(` Player 2: ${player2Cards.cards} \n `)
             Player1Wins++;
             //alert and maybe a prompt
             console.log(` PLAYER ONE wins this round \n Play again? Enter yes: \n Exit: enter 'N'`)
@@ -33,6 +34,8 @@ function checkCards (){
             
         } else if (player2Cards.cards > player1Cards.cards){
             console.log(` Player 2: ${player2Cards.cards} \n `)
+            console.log(` Player 1: ${player1Cards.cards} `)
+
             // alert and maybe A prompt
             Player2Wins++;
             console.log(` PLAYER TWO wins this round \n Play again? Enter yes: \n Exit: enter 'N'`)
@@ -76,6 +79,9 @@ checkCards();
         // PROMPT user to play again (-animate when you have time)
     // 
 
+
+// **************** DISPLAYS *********************
+    //Change 5 card display to one card display in the block
 
 //put maht.random in a function
 
