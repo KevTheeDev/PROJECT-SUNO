@@ -60,10 +60,22 @@ checkCards();
 // - initialize a variable whose value is a random num (using math.random)
 // - push random number to player.cards
 
-// write a function that check if each index of player1.cards[round] 
+// write a function that check if each index of player1.cards[round]...
 // matches the same index of player2.cards[round]. whoever has the higher card, increment their wins.
 
 // write a function called "battle" that calls each of these functions to similate a game. at the end of the function, increment the round.
+
+
+// create a block / grid and display 
+
+// **************** ON CLICKS *********************
+    // After PLAY is clicked display the turn out of below
+    // display the card of PLAYER1 and PLAYER2
+        // display 'increment round' after whoever has won
+        // display 'win' round after whoever has won - do this first maybe
+        // PROMPT user to play again (-animate when you have time)
+    // 
+
 
 //put maht.random in a function
 
