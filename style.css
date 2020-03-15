@@ -1,3 +1,46 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(89, 226, 181);
+    height: 100%;
 }
+
+header {
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 20pt;
+}
+
+
+p {
+ text-align: center;
+ color: white;
+ font-size: 1.8em;
+ margin-bottom: 2in;
+}
+
+#splitPics {
+    display: flex;
+    justify-content: space-between;
+}
+
+#catface{
+    display: grid;  
+    height: 250px;
+    width: 190px;
+}
+
+#dogface{ 
+    height: 250px;
+    width: 190px;
+}
+
+/* img{
+    height: 250px;
+    width: 190px;
+    border-radius: 10%; 
+    margin-top: 230px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 60px 20px;
+    grid-template-columns: space-between 30px ; }
+*/
