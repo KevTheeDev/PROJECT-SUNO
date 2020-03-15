@@ -7,6 +7,21 @@
 
 <!-- Shout out to Kim Lao who helped create a new function (while loop) 
         and put all my already made functions and methods, etc. into that function.
+
+
+
+
+                                REFERENCES 
+
+                                Characters
+                                (catFace)
+            https://www.pinterest.ru/pin/864620828434620261/ 
+
+                                (dogFace)
+                https://www.petmd.com/sites/default/files/petmd-puppy-weight.jpg
+
+                
+
             
 -->
 
