@@ -25,28 +25,41 @@ function checkCards (){
     while (!gameIsWon) {
         if (player1Cards.cards > player2Cards.cards){
             console.log(` Player 1: ${player1Cards.cards} `)
-            console.log(` Player 2: ${player2Cards.cards} \n `)
-            Player1Wins++;
+            console.log(` Player 2: ${player2Cards.cards} \n`)
+
             //alert and maybe a prompt
             console.log(` PLAYER ONE wins this round \n Play again? Enter yes: \n Exit: enter 'N'`)
             //if yes then update random nums update objects
             // if no then break
+
+            Player1Wins++;
+            console.log(`Player 1 Win(s): `, Player1Wins)
+            break
             
         } else if (player2Cards.cards > player1Cards.cards){
-            console.log(` Player 2: ${player2Cards.cards} \n `)
-            console.log(` Player 1: ${player1Cards.cards} `)
+            console.log(` Player 2: ${player2Cards.cards} `)
+            console.log(` Player 1: ${player1Cards.cards} \n `)
 
             // alert and maybe A prompt
-            Player2Wins++;
             console.log(` PLAYER TWO wins this round \n Play again? Enter yes: \n Exit: enter 'N'`)
             //if yes then update random nums update objects
             // if no then break
+
+            Player2Wins++;
+            console.log(`Player 2 Win(s): `, Player2Wins)
+            break
             
         } else if (player1Cards.cards == player2Cards.cards){
             //alert 
-            console.log(`ROUND IS A DRAW: Try again? Enter yes:`)
             //if yes then update random nums update objects
             // if no then break
+            console.log(` Player 2: ${player2Cards.cards} `)
+            console.log(` Player 1: ${player1Cards.cards} \n `)
+            console.log(`Win(s): `, Player2Wins , Player1Wins)
+            console.log(`ROUND IS A DRAW: Try again? Enter yes:`)
+
+            console.log(`Not winning`, ) 
+            break
         }
         gameIsWon=((Player1Wins>=5) || (Player2Wins>=5));
     }
