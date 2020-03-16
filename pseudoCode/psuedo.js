@@ -13,11 +13,14 @@
 
 // **************** ON CLICKS *********************
     // After PLAY is clicked display the turn out of below
-    // display the card of PLAYER1 and PLAYER2
-        // display 'increment round' after whoever has won
-        // display 'win' round after whoever has won - do this first maybe
-        // PROMPT user to play again (-animate when you have time)
-    // 
+    // display the card of PLAYER1
+        // 1. display 'increment round' after whoever has won
+        // 2. display 'win' round after whoever has won - do this first maybe
+        // 3. PROMPT user to play again (-animate when you have time)
+
+    // display the card of PLAYER2
+        // repeat 1, 2, and 3 from above
+
 
 
 // **************** DISPLAYS *********************
