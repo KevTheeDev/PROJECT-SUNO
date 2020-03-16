@@ -33,6 +33,26 @@ p {
     width: 190px;
 }
 
+.playbuttons{
+    display: flex;
+    margin-top: .9in;
+    justify-content: space-between;
+}
+
+.button1{
+    background-color: rgb(83, 153, 240);
+    color: white;
+    font-size: 10pt;
+    border-radius: 5px;
+}
+
+.button2{
+    background-color: rgb(235, 56, 56);
+    color: rgb(247, 231, 231);
+    font-size: 10pt;
+    border-radius: 5px;
+}
+
 /* img{
     height: 250px;
     width: 190px;
