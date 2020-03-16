@@ -1,9 +1,10 @@
 // **************** SUNO *********************
-console.log(`\n \n \n WAR-S \n `)
+console.log
+alert(`\n \n \n A GAME OF WAR-S \n `)
 let round = 0
 
 function generateNum(){
-    let randomNum = Math.floor(Math.random() * 11);
+    let randomNum = Math.floor(Math.random() * 21);
 return randomNum;
 }
 
@@ -23,31 +24,47 @@ function checkCards (){
     let gameIsWon=false;
 
     while (!gameIsWon) {
-        if (player1Cards.cards > player2Cards.cards){
-            console.log(` Player 1: ${player1Cards.cards} `)
-            console.log(` Player 2: ${player2Cards.cards} \n`)
+        let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
+        if (enterYorN == 'y'){
+            if (player1Cards.cards > player2Cards.cards){
+                console.log
+                alert(` Player 1: ${player1Cards.cards} `)
+                console.log
+                alert(` Player 2: ${player2Cards.cards} \n`)
 
-            //alert and maybe a prompt
-            console.log(` PLAYER ONE wins this round \n Play again? Enter yes: \n Exit: enter 'N'`)
-            //if yes then update random nums update objects
-            // if no then break
+                //a prompt
+                console.log
+                prompt(` PLAYER ONE wins this round \n Play again? Enter 'Y': \n Exit: enter 'N'`)
+                    if (enterYorN == 'y'){
+                        // if y then increase wins
+                        Player1Wins++;
+                        alert(`Player 1 Win(s):  ${Player1Wins}`)
 
-            Player1Wins++;
-            console.log(`Player 1 Win(s): `, Player1Wins)
-            break
-            
-        } else if (player2Cards.cards > player1Cards.cards){
-            console.log(` Player 2: ${player2Cards.cards} `)
-            console.log(` Player 1: ${player1Cards.cards} \n `)
+                        //if n then break;
+                    } else if (enterYorN == 'n'){
+                        break;
+                    }
 
-            // alert and maybe A prompt
-            console.log(` PLAYER TWO wins this round \n Play again? Enter yes: \n Exit: enter 'N'`)
-            //if yes then update random nums update objects
-            // if no then break
-
-            Player2Wins++;
-            console.log(`Player 2 Win(s): `, Player2Wins)
-            break
+            }   else if (player2Cards.cards > player1Cards.cards){
+                console.log
+                alert (` Player 2: ${player2Cards.cards} `)
+                console.log
+                alert (` Player 1: ${player1Cards.cards} \n `)
+        
+                // alert and maybe A prompt
+                console.log
+                prompt(` PLAYER TWO wins this round \n \n Play again? Enter yes: \n Exit: enter 'N'`)
+                    if (enterYorN == 'y')
+                //if yes then update random nums update objects
+                Player2Wins++;
+                alert(`Player 2 Win(s): `, Player2Wins)
+               }
+                    //if n then break;
+                    else if (enterYorN == 'n'){
+                        break;
+}
+        } else if (`${enterYorN == 'n'}`){
+                break;
             
         } else if (player1Cards.cards == player2Cards.cards){
             //alert 
