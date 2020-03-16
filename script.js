@@ -62,19 +62,18 @@ function checkCards (){
                         // if no then break
                         //alert 
                         console.log
-                        alert(` Player 2: ${player2Cards.cards} `)
+                        alert(` Player 2: ${player2Cards.cards} \n`)
                         console.log
-                        alert(` Player 1: ${player1Cards.cards} \n `)
+                        alert(` Player 1: ${player1Cards.cards} \n \n`)
                         console.log
-                        alert(`Win(s):  ${Player2Wins} , ${Player1Wins}`)
+                        alert(`Win(s):  ${Player2Wins} , ${Player1Wins} \n \n`)
                         console.log
-                        prompt(`ROUND IS A DRAW: Try again? Enter yes:`)
+                        prompt(`ROUND IS A DRAW: Try again? Enter yes: \n \n `)
                         // if(enterYorN == 'y'){
                             // // run the above code all over again
                         // }
             
                         console.log(`Not winning`, ) 
-                        break
                     }
                 } else if (`${enterYorN == 'n'}`){
                 break;            
