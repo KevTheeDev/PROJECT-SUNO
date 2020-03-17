@@ -5,29 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    
     <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body> 
-    <header> <h1> A GAME OF WAR-S </h1> </header>
-</body>
-
+    <h1> A GAME OF WAR-S </h1> 
 <div class="paraInstructions">
-<p> Game goes up to five rounds, whoever gets their first wins!</p>
-
-
+    <p> Game goes up to five rounds, whoever gets their first wins!</p>
+        <div class="cardboxes"> 
+        <p id="cardbox1"></p>
+        <p id="cardbox2"></p>
+        </div>
 </div>
 
 <div id="splitPics">
 <img id="catface" src="/Wireframes/CatFace.jpg" alt="catface">
 <img id="dogface" src="/Wireframes/dogFace.jpg" alt="dogface">
+
+
 </div>
 
 <div class="playbuttons">
-<button class="button1" onclick="rungame()">Play Card</button>
-<button class="button2">Play Card</button>
+    <button type="button" id="button1" onclick="rungame()">Play Card</button>
+    <!-- make a div element with that button  -->
+    
+    <button id="button2" onclick="">Play Card</button>
+    
+    <button id="fool" onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    
 </div>
+</body>
 
+
+ 
 </html>
