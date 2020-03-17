@@ -1,10 +1,10 @@
 // **************** SUNO *********************
-alert(`\n \n \n A GAME OF WAR-S \n `)
+// alert(`\n \n \n A GAME OF WAR-S \n `)
 let round = 0
 
 function generateNum(){
-    let randomNum = Math.floor(Math.random() * 21);
-return randomNum;
+    let randomNum = Math.floor(Math.random() * (21 -1) +1);
+    return randomNum;
 }
 
 let player1Cards = {
@@ -15,20 +15,29 @@ let player2Cards = {
     cards: generateNum(),
 }
 
-
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
 
 function checkCards (){
     let Player1Wins=0;
-    let Player2Wins=0
+    let Player2Wins=0;
     let gameIsWon=false;
 
+    // href# makes it clickable
+    /*
+    onclikc holds one functions
+    ket
+    */
+
     while (!gameIsWon) {
-        let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
+        // let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
+        let enterYorN;
         if (enterYorN == 'y'){
             function rungame(){
                 if (player1Cards.cards > player2Cards.cards){
-                    alert(` Player 1: ${player1Cards.cards} `)
-                    alert(` Player 2: ${player2Cards.cards} \n`)
+                    document.getElementById('button1').innerHTML='(`Player 1: ${player1Cards.cards} `)';
+                    document.getElementById('button2').innerHTML=(` Player 2: ${player2Cards.cards} \n`)
 
                     //a prompt
                     prompt(` PLAYER ONE wins this round \n Play again? Enter 'Y': \n Exit: enter 'N'`)
@@ -38,7 +47,7 @@ function checkCards (){
                             alert(`Player 1 Win(s):  ${Player1Wins}`)
                             //if n then break;
                             } else if (enterYorN == 'n'){
-                                break;
+                                // break;
                             }
                         
                         // if 2nd card is higher
@@ -56,7 +65,7 @@ function checkCards (){
                             }
                                 //if n then break;
                                 else if (enterYorN == 'n'){
-                                    break;
+                                    // break;
                             }
                         } else if (player1Cards.cards == player2Cards.cards){
                             // if no then break
@@ -78,6 +87,7 @@ function checkCards (){
         } 
         gameIsWon=((Player1Wins>=5) || (Player2Wins>=5));
     }
+}
 checkCards();
 
 
