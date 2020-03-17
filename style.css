@@ -48,19 +48,29 @@ p {
     display: grid; 
     border-radius: 50%; 
     height: 250px;
-    width: 230px;
+    width: 210px;
 }
 
 #dogface{ 
     height: 250px;
     border-radius: 50%;
-    width: 230px;
+    width: 190px;
 }
 
 .playbuttons{
     display: flex;
     margin-top: .9in;
     justify-content: space-between;
+}
+
+#startbtn{
+    background-color: rgb(94, 241, 49);
+    color: white;
+    font-size: 17pt;
+    border-radius: 5px;
+    height: 60pt;
+    width: 190pt;
+    
 }
 
 #button1{
@@ -70,6 +80,7 @@ p {
     border-radius: 5px;
     height: 60pt;
     width: 100pt;
+    
 }
 
 #button2{
