@@ -78,7 +78,6 @@ function checkCards (){
 
     while (!gameIsWon) {
         let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
-        break;
         if (enterYorN == 'y'){
             rungame()
             // if 2nd card is higher
