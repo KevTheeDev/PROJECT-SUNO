@@ -53,6 +53,7 @@
 HTML/CS + JS
 
 ### Mon
+2. Have been working on prompts and alerts must revert to buttons and such
 1. Tweaks and advacne HTML/CSS (animations)
 
 
