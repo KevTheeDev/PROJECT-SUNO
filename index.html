@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body> 
     <h1> A GAME OF WAR-S </h1> 
 <div class="paraInstructions">
     <p> Game goes up to five rounds, whoever gets their first wins!</p>
+    <p id="intstruction"> Press the Start Button or 'Play Card' buttons below and work in the prompts to win the game of WAR-s </p>
         <div class="cardboxes"> 
-        <p id="cardbox1"></p>
-        <p id="cardbox2"></p>
+        <p id="cardbox1">CARD: </p>
+        <p id="cardbox2">CARD: </p>
         </div>
 </div>
 
 <div id="splitPics">
-<img id="catface" src="/Wireframes/CatFace.jpg" alt="catface">
-<img id="dogface" src="/Wireframes/dogFace.jpg" alt="dogface">
+<img id="catface" src="/assets/CatFace.jpg" alt="catface">
+<img id="dogface" src="/assets/dogFace.jpg" alt="dogface">
 
 </div>
 
 <div id="response"> </div>
 
     <div class="playbuttons">
-        <button type="button" id="button1" onclick="rungame()">Play Card</button>
+        <button id="button1" onclick="rungame()">Play Card</button>
         <!-- make a div element with that button  -->
 
         <button type="button" id="startbtn" onclick="checkCards()"> Start </button>

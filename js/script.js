@@ -15,9 +15,9 @@ let Player1Wins=0;
 let Player2Wins=0;
 let gameIsWon=false;
 
+let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
 
 function rungame(){
-    let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
     if (player1Cards.cards > player2Cards.cards){
         alert(` Player 1: ${player1Cards.cards} `)
         alert(` Player 2: ${player2Cards.cards} \n`)
@@ -37,7 +37,6 @@ function rungame(){
 
 
 function rungame2(){
-    let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
     alert (` Player 2: ${player2Cards.cards} `)
     alert (` Player 1: ${player1Cards.cards} \n `)
 
@@ -51,13 +50,12 @@ function rungame2(){
     }
         //if n then break;
         else if (enterYorN == 'n'){
-            rungame2();
+            // break;
     }
 }        
 
 function rungameEqual(){
-    let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
-    alert(` Player 2: ${player2Cards.cards} \n`)
+    alert(` Player 2: ${player2Cards.cards} \n \n`)
     alert(` Player 1: ${player1Cards.cards} \n \n`)
     alert(`Win(s):  ${Player2Wins} , ${Player1Wins} \n \n`)
     alert(`Not winning`) 
@@ -78,9 +76,9 @@ function checkCards (){
     let Player2Wins=0
     let gameIsWon=false;
 
-    let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
-    
     while (!gameIsWon) {
+        let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
+        break;
         if (enterYorN == 'y'){
             rungame()
             // if 2nd card is higher
