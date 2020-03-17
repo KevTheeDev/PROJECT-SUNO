@@ -1,24 +1,18 @@
 // **************** SUNO *********************
-alert(`\n \n \n A GAME OF WAR-S \n `)
-let round = 0
-
-function generateNum(){
-    let randomNum = Math.floor(Math.random() * 21);
-    return randomNum;
-}
+// alert(`\n \n \n A GAME OF WAR-S \n `)
 
 let player1Cards = {
-    cards: generateNum(),
+    cards: Math.floor(Math.random() * 21),
 }
 
 let player2Cards = {
-    cards: generateNum(),
+    cards: Math.floor(Math.random() * 21),
+
 }
 
 
-
 let Player1Wins=0;
-let Player2Wins=0
+let Player2Wins=0;
 let gameIsWon=false;
 
 let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
@@ -38,8 +32,42 @@ function rungame(){
                 } else if (enterYorN == 'n'){
                     // break;
                 }
-             }
+            }
         }
+
+
+function rungame2(){
+    alert (` Player 2: ${player2Cards.cards} `)
+    alert (` Player 1: ${player1Cards.cards} \n `)
+
+    // alert and maybe a prompt
+    prompt(` PLAYER TWO wins this round \n \n Play again? Enter yes: \n Exit: enter 'N'`)
+        
+    if (enterYorN == 'y'){
+    //if yes then update random nums update objects
+    Player2Wins++;
+    alert(`Player 2 Win(s):  ${Player2Wins}`)
+    }
+        //if n then break;
+        else if (enterYorN == 'n'){
+            // break;
+    }
+}        
+
+function rungameEqual(){
+    alert(` Player 2: ${player2Cards.cards} \n`)
+    alert(` Player 1: ${player1Cards.cards} \n \n`)
+    alert(`Win(s):  ${Player2Wins} , ${Player1Wins} \n \n`)
+    alert(`Not winning`) 
+    prompt(`ROUND IS A DRAW: Try again? Enter yes: \n \n `)
+
+    //if yes then update random nums update objects or run function rungame
+    if(enterYorN == 'y'){
+        rungame();
+    } else if (enterYorN == 'n'){
+        // break;
+    }
+}
 
 
 
@@ -51,61 +79,20 @@ function checkCards (){
     while (!gameIsWon) {
         let enterYorN = prompt (`To play enter: 'Y' \n To exit: 'N'`);
         if (enterYorN == 'y'){
-            
             rungame()
-            // if (player1Cards.cards > player2Cards.cards){
-            //     alert(` Player 1: ${player1Cards.cards} `)
-            //     alert(` Player 2: ${player2Cards.cards} \n`)
-
-            //     // a prompt
-            //     prompt(` PLAYER ONE wins this round \n Play again? Enter 'Y': \n Exit: enter 'N'`)
-            //     if (enterYorN == 'y'){
-            //         // if y then increase wins
-            //         Player1Wins++;
-            //         alert(`Player 1 Win(s):  ${Player1Wins}`)
-            //         //if n then break;
-            //         } else if (enterYorN == 'n'){
-            //             // break;
-            //         }
-            //     }
-            // }
-                        // if 2nd card is higher
+            // if 2nd card is higher
     
-                    } else if (player2Cards.cards > player1Cards.cards){
-                        alert (` Player 2: ${player2Cards.cards} `)
-                        alert (` Player 1: ${player1Cards.cards} \n `)
-                
-                        // alert and maybe a prompt
-                        prompt(` PLAYER TWO wins this round \n \n Play again? Enter yes: \n Exit: enter 'N'`)
-                            
-                        if (enterYorN == 'y'){
-                        //if yes then update random nums update objects
-                        Player2Wins++;
-                        alert(`Player 2 Win(s):  ${Player2Wins}`)
-                        }
-                            //if n then break;
-                            else if (enterYorN == 'n'){
-                                // break;
-                        }
-                    } else if (player1Cards.cards == player2Cards.cards){
-                        // if no then break
-                        //alert 
-                        alert(` Player 2: ${player2Cards.cards} \n`)
-                        alert(` Player 1: ${player1Cards.cards} \n \n`)
-                        alert(`Win(s):  ${Player2Wins} , ${Player1Wins} \n \n`)
-                        alert(`Not winning`) 
-                        prompt(`ROUND IS A DRAW: Try again? Enter yes: \n \n `)
+            } else if (player2Cards.cards > player1Cards.cards){
+                rungame2();
 
-                        //if yes then update random nums update objects or run function rungame
-                        if(enterYorN == 'y'){
-                            rungame();
-                        } else if (enterYorN == 'n')
-                        break;
-                    }
-                 else if (`${enterYorN == 'n'}`){
-                break;            
+            } else if (player1Cards.cards == player2Cards.cards){
+                // if no then break
+                rungameEqual();
+            }
+            else if (`${enterYorN == 'n'}`){
+        break;            
         } 
-        gameIsWon=((Player1Wins>=5) || (Player2Wins>=5));
+    gameIsWon=((Player1Wins>=5) || (Player2Wins>=5));
     }
 }
 checkCards();
