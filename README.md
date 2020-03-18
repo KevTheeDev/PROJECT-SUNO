@@ -18,7 +18,14 @@
             https://www.pinterest.ru/pin/864620828434620261/ 
 
                                 (dogFace)
-                https://www.petmd.com/sites/default/files/petmd-puppy-weight.jpg
+            https://www.petmd.com/sites/default/files/petmd-puppy-weight.jpg
+
+
+                                (KingofClubs)
+            https://thecardsoflife.com/wp-content/images/cod-kc.jpg
+
+                                (AceofHearts)
+            https://upload.wikimedia.org/wikipedia/commons/5/57/Playing_card_heart_A.svg
 
                 
 
@@ -55,6 +62,9 @@ HTML/CS + JS
 ### Mon
 2. Have been working on prompts and alerts must revert to buttons and such
 1. Tweaks and advacne HTML/CSS (animations)
+3. Buttons not working, found out githhub only saves only updated parts of your code.
+
+
 
 
 <!--
